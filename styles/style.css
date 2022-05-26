@@ -1,0 +1,142 @@
+/* En sida om kaffe:) */
+header {
+  position: relative;
+}
+header img {
+  border: 1px solid black;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+header span {
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 55%;
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* rubriklistan */
+nav {
+  background-color: #eaaf66;
+  opacity: 80%;
+  margin: 10px auto 10px auto;
+  border: 1px solid black;
+  padding: 0.2em;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li {
+  float: left;
+  padding: 0.5em;
+  font-size: 1em;
+  border-right: 1px solid black;
+  line-height: 12px;
+}
+nav a {
+  text-decoration: none;
+}
+
+.rubrikerna:hover {
+  display: inline;
+  cursor: grab;
+}
+
+.rubrikerna:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+/*Båda sidorna*/
+div.wrapper {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+/*Vänster sida*/
+aside {
+  background-color: peachpuff;
+  opacity: 65%;
+  font-size: 2em;
+  padding: 20px;
+  flex: 1;
+  border: 1px solid black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Höger sida*/
+main {
+  background-color: peachpuff;
+  flex: 2;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-decoration: wavy;
+  font-style: italic;
+  padding: 10px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-style: oblique;
+}
+p {
+  text-shadow: #b7c4b1;
+  text-decoration-line: underline;
+  padding: 20px;
+}
+img {
+  opacity: 90%;
+  cursor: grab;
+}
+#bild1 {
+  padding-left: 20px;
+}
+/*Footer*/
+footer {
+  background-color: gainsboro;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  height: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer img {
+  float: right;
+  width: 150px;
+  height: 60px;
+  position: relative;
+  bottom: 34px;
+  right: 50px;
+}
+div.foten {
+  left: 33px;
+  top: 16px;
+  position: relative;
+}
+
+/* länklistan, media querys */
+@media only screen and (max-width: 600px) {
+  .listan_links {
+    background-color: lavender;
+  }
+}
+
+.listan_links {
+  font-size: 10px;
+}

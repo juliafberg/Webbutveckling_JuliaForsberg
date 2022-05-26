@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webbutveckling</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/sunset.JPG" alt="En solnedgång" />
+      <span> En sida om kaffe </span>
+    </header>
+    <nav>
+      <ul class="rubrikerna">
+        <a href="startpage.html"> <li>Startsida</li></a>
+        <a href="form.html"> <li>Formulär</li></a>
+        <a href="contact.html"><li>Om oss</li></a>
+        <a href="pictures.html"><li>Galleri</li></a>
+        <a href="links.html"><li>Användbara länkar</li></a>
+        <a href="list.html"><li>Idélåda</li></a>
+      </ul>
+    </nav>
+  <p>Fyll i formuläret nedan och få mer information!</p>
+    <hr />
+    <form action="" method="post">
+      <fieldset>
+        <p>
+          <label for="name"> Dricker du kaffe?</label>
+          <p>Ja <input type="checkbox" name="name" id="yes" value="taggad-yes" /></p>
+          <p>Nej <input type="checkbox" name="name" id="no" value="taggad-no" /></p> 
+        </p>
+        <p>
+          <label for="datum"> Ditt födelsedatum?</label>
+          <p> <input type="date" name="datum" id="födelsedatum" /></p>
+        </p>
+        <p>
+          <label for="veckodag">Vad är du mest intresserad av?</label>
+          <select name="veckodag" id="dagar">
+            <option value="kaffeodling">Kaffeodling</option>
+            <option value="transport">Transporten till Sverige</option>
+            <option value="Paketering">Själva paketeringen</option>
+            <option value="Kaffesorter">Olika typer av kaffesorter</option>
+    
+          </select>
+        </p>
+        <p>
+          <label for="age"> Ange din ålder:</label>
+          <br />
+          <input type="number" name="age" id="age" />
+        </p>
+        <p>
+          <label for="email"> Ange din email:</label>
+          <br />
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="question"
+            >Vill du berätta något mer? Skriv det här!</label
+          >
+          <br />
+          <textarea name="question" id="question" cols="30" rows="2"></textarea>
+        </p>
+         <p>
+         
+          <label for="send"> Skicka in formuläret!</label>
+          <br />
+          <input type="submit" name="send" id="send" />
+        </p>
+      </fieldset>
+    </form>
+    <hr />
+    <p id="mail_link">
+      Har du några frågor? <a href="mailto:juliafberg@gmail.com">Maila mig!</a>
+    </p>
+    <footer>
+      <div class="foten">Julia Forsberg - Distanskursen Webbprogrammering</div>
+    </footer>
+  </body>
+</html>

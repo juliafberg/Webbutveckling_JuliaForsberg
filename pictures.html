@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webbutveckling</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/sunset.JPG" alt="En solnedgång" />
+      <span> En sida om kaffe </span>
+    </header>
+    <nav>
+    
+      <ul class="rubrikerna">
+    <a href="startpage.html"> <li>Startsida</li></a>
+       <a href="startpage.html"> <li>Startsida</li></a>
+        <a href="form.html"> <li>Formulär</li></a>
+        <a href="contact.html"><li>Om oss</li></a>
+        <a href="pictures.html"><li>Galleri</li></a>
+        <a href="links.html"><li>Användbara länkar</li></a>
+        <a href="list.html"><li>Idélåda</li></a>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside>
+        <ul class="listan_galleri">
+          <li>Här är lite bilder på kaffe (det kommer, hade ej internet för att hitta nya bilder)</li>
+          
+      </aside>
+      <main>
+        <style>
+          div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 1rem;
+          }
+          div.gallery figure {
+            margin: 0;
+          }
+
+          div.gallery:hover {
+            border: 2px solid #777;
+          }
+
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          img:hover {
+            opacity: 0.2;
+          }
+          figcaption {
+            font-size: 10px;
+          }
+          @media (min-width: 578px) {
+          }
+          @media (min-width: 768px) {
+          }
+          @media (min-width: 1200px) {
+          }
+        </style>
+        <div class="gallery">
+          <figure>
+            <img
+              src="images/lake.JPG"
+              alt="Bild på en sjö"
+            />
+            <figcaption>Jag hade inga passande bilder</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/plant2.JPG"
+              alt="Bild på en grön växt"
+            />
+            <figcaption>Inte en kaffeplanta</figcaption>
+          </figure>
+          <figure>
+            <img src="images/view.JPG" alt="Bild på en bil och en tjej som tittar ut över ett fält" />
+            <figcaption>Fin utsikt!</figcaption>
+          </figure>
+          <figure>
+            <img src="images/beach.JPG" alt="Bild på en strand" />
+            <figcaption>Havet! Stranden!</figcaption>
+          </figure>
+        
+        </div>
+      </main>
+    </div>
+    <footer>
+     <div class="foten">Julia Forsberg - Distanskursen Webbprogrammering</div>
+    </footer>
+  </body>
+</html>
